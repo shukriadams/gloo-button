@@ -1,0 +1,41 @@
+.gloo-button{
+  background-color:#5d92cd;
+  color:#402117;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover{
+    background-color:#2c609b;
+    @include gloo-utils-transition(all, 0.5s);
+  }
+
+  &.gloo-button--small{
+    padding: 10px 20px 10px 20px;
+  }
+
+  &.gloo-button--medium{
+    padding: 10px 20px 10px 20px;
+  }
+
+  &.gloo-button--large{
+    padding: 10px 20px 10px 20px;
+  }
+
+  &.gloo-button--responsive{
+    width:100%;
+    display: block;
+    @media #{$gloo-responsive-small}{
+      width:inherit;
+      display:inline-block;
+    }
+  }
+
+  &.gloo-button--rounded{
+    @include gloo-utils-borderRadius(6px);
+
+  }
+}
